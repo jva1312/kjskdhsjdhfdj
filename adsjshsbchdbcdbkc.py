@@ -53,8 +53,9 @@ def setup_driver(proxy_host):
 
     # Set Chrome options
     options = webdriver.ChromeOptions()
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    
+    options.add_argument("--no-sandbox")  
+    options.add_argument("--disable-dev-shm-usage")  
+    options.add_argument("--disable-blink-features=AutomationControlled")    
     # Automatically install the latest ChromeDriver
     driver = wire_webdriver.Chrome(
         seleniumwire_options=seleniumwire_options,
