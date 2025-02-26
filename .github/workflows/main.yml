@@ -1,0 +1,32 @@
+name: Run Selenium Bot
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 */6 * * *"  # Runs every 6 hours (adjust as needed)
+  workflow_dispatch:  # Allows manual execution
+
+jobs:
+  run-selenium:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb
+          python -m pip install --upgrade pip
+          pip install selenium selenium-wire pyvirtualdisplay requests
+
+      - name: Run Selenium bot
+        run: xvfb-run --auto-servernum python bot.py  # Run script with virtual display
