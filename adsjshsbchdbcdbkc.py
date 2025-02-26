@@ -16,8 +16,9 @@ from pyvirtualdisplay import Display
 # display.start()
 
 # Telegram bot configuration
-TELEGRAM_BOT_TOKEN = "7244502796:AAHPRBZlUFIQS3HbF7ZgKixHXPJxLi4bBqg"
-TELEGRAM_CHAT_ID = "1005895910"
+
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 # Proxy configuration
 PROXY_HOSTS = [
@@ -25,7 +26,7 @@ PROXY_HOSTS = [
 ]
 PROXY_PORT = "12321"
 PROXY_USER = "XQ4rGW49vcQPuw93"
-PROXY_PASS = "eEtvRjZWaBnx2ZHM_country-it"
+PROXY_PASS = os.getenv("PROXY_PASS")
 
 def send_telegram_message(message):
     """Send a message to the specified Telegram chat."""
