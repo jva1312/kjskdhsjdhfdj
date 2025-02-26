@@ -29,4 +29,4 @@ jobs:
           pip install selenium selenium-wire pyvirtualdisplay requests
 
       - name: Run Selenium bot
-        run: xvfb-run --auto-servernum python bot.py  # Run script with virtual display
+        run: xvfb-run --auto-servernum python adsjshsbchdbcdbkc.py  # Run script with virtual display
