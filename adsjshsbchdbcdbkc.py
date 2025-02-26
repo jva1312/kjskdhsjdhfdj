@@ -54,8 +54,8 @@ def setup_driver(proxy_host):
 
     # Set Chrome options
     options = webdriver.ChromeOptions()
-    options.add_argument("--no-sandbox")  
-    options.add_argument("--disable-dev-shm-usage")  
+    # options.add_argument("--no-sandbox")  
+    # options.add_argument("--disable-dev-shm-usage")  
     options.add_argument("--disable-blink-features=AutomationControlled")    
     # Automatically install the latest ChromeDriver
     driver = wire_webdriver.Chrome(
@@ -89,21 +89,18 @@ def search_and_click(proxy_host):
         
         try:
             # Step 1: Open Google
-            driver.get("http://www.google.com")
+            driver.get("http://www.google.it")
             time.sleep(random.uniform(2, 4))
 
             # Get public IP address
-            ip_address = driver.execute_script("return fetch('https://api64.ipify.org?format=json').then(res => res.json()).then(data => data.ip);")
-            time.sleep(2)
+
 
             # Accept cookies if pop-up appears
             try:
                 time.sleep(5)
-                scrollable_element = driver.wait.until(EC.visibility_of_element_located(By.XPATH, '//*[@id="xe7COe"]/div[3]'))
-
-                # Scroll to the bottom of this element
-                driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight;", scrollable_element)    
-
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(random.uniform(2, 5))
+                # print('error here 2')
                 accept_button = wait.until(
                     EC.visibility_of_element_located((By.XPATH, '//*[@id="L2AGLb"]/div'))
                     # //*[@id="L2AGLb"]/div
@@ -119,6 +116,8 @@ def search_and_click(proxy_host):
             time.sleep(random.uniform(1, 3))
             search_box.send_keys(Keys.RETURN)
             time.sleep(random.uniform(3, 6))
+            ip_address = driver.execute_script("return fetch('https://api64.ipify.org?format=json').then(res => res.json()).then(data => data.ip);")
+            time.sleep(2)
 
             # Step 3: Find Sponsored Ads
             ads = driver.find_elements(By.XPATH, "//span[contains(text(),'Sponsorizzato')]/ancestor::div[1]//a")
