@@ -26,7 +26,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y xvfb
           python -m pip install --upgrade pip
-          pip install requirements.txt
+          pip install -r requirements.txt --force-reinstall
+
 
       - name: Run Selenium bot
         run: xvfb-run --auto-servernum python adsjshsbchdbcdbkc.py  # Run script with virtual display
