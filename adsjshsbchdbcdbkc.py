@@ -146,5 +146,8 @@ if __name__ == "__main__":
         for host in PROXY_HOSTS:
            
             for i in range(10):
+                print(i)
                 search_and_click(host)
+                if i==10:
+                    break
                 
