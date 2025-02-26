@@ -68,16 +68,16 @@ def setup_driver(proxy_host):
     return driver, wait
 
 keywords = [
-    "Sassuolo ceramica plus",
-    "Gres porcellanato Sassuolo plus",
+    "Sassuolo ceramica ",
+    "Gres porcellanato Sassuolo ",
     "Ceramiche Sassuolo",
     "Ceramica Sassuolo plus ",
-    "Vendita gres porcellanato Sassuolo plus",
+    "Vendita gres porcellanato Sassuolo ",
     "Piastrelle Sassuolo",
     "Showroom piastrelle Sassuolo",
-    "Rivestimenti Sassuolo plus",
+    "Rivestimenti Sassuolo ",
     "Effetto marmo Sassuolo",
-    "Effetto legno Sassuolo plus"
+    "Effetto legno Sassuolo"
 ]
 
 
