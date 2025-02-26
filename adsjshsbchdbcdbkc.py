@@ -12,8 +12,8 @@ from seleniumwire import webdriver as wire_webdriver  # Import selenium-wire web
 from pyvirtualdisplay import Display
 
 # Start virtual display
-display = Display(visible=1, size=(1920, 1080))
-display.start()
+# display = Display(visible=1, size=(1920, 1080))
+# display.start()
 
 # Telegram bot configuration
 TELEGRAM_BOT_TOKEN = "7244502796:AAHPRBZlUFIQS3HbF7ZgKixHXPJxLi4bBqg"
