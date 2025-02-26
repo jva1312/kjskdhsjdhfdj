@@ -30,4 +30,8 @@ jobs:
 
 
       - name: Run Selenium bot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PROXY_PASS: ${{ secrets.PROXY_PASS }}
         run: xvfb-run --auto-servernum python adsjshsbchdbcdbkc.py  # Run script with virtual display
