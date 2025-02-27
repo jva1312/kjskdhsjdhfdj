@@ -71,7 +71,7 @@ def setup_driver(proxy_host):
 
 def rotate_ip():
     
-    response = requests.get("https://i.fxdx.in/api-rt/changeip/QFOfCxQSuL/x8KVFCXGM9WE7")
+    response = requests.get("https://i.fxdx.in/api-rt/changeip/4CnaGR7Tfw/x8KWHMGKRNPNC")
     print("IP Rotation Response:", response.text)
 
 
