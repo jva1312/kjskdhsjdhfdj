@@ -96,7 +96,7 @@ def search_and_click(proxy_host):
         driver, wait = setup_driver(proxy_host)
         
         try:
-            # rotate_ip()
+            rotate_ip()
             # Step 1: Open Google
             driver.get("http://www.google.it")
             time.sleep(random.uniform(2, 4))
