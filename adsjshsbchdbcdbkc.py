@@ -70,6 +70,7 @@ def setup_driver(proxy_host):
 
 
 def rotate_ip():
+    
     response = requests.get("https://i.fxdx.in/api-rt/changeip/QFOfCxQSuL/x8KVFCXGM9WE7")
     print("IP Rotation Response:", response.text)
 
@@ -95,7 +96,7 @@ def search_and_click(proxy_host):
         driver, wait = setup_driver(proxy_host)
         
         try:
-            rotate_ip()
+            # rotate_ip()
             # Step 1: Open Google
             driver.get("http://www.google.it")
             time.sleep(random.uniform(2, 4))
