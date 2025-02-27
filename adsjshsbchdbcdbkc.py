@@ -22,10 +22,10 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 # Proxy configuration
 PROXY_HOSTS = [
-    "geo.iproyal.com"
+    "80.240.23.220"
 ]
-PROXY_PORT = "12321"
-PROXY_USER = "XQ4rGW49vcQPuw93"
+PROXY_PORT = "16902"
+PROXY_USER = "w7373848392923"
 PROXY_PASS = os.getenv("PROXY_PASS")
 
 def send_telegram_message(message):
