@@ -84,7 +84,7 @@ keywords = [
     "Piastrelle stock sassuolo",
     "Vendita piastrelle online",
     "Ceramiche Sassuolo",
-
+    "Ceramica Sassuolo Plus"
     # "Sassuolo ceramica plus",
     # "Vendita gres porcellanato Sassuolo ",
     # "Piastrelle Sassuolo",
