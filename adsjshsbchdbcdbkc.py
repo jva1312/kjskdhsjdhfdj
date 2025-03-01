@@ -79,14 +79,19 @@ def rotate_ip():
 keywords = [
     "Sassuolo ceramica ",
     "Gres porcellanato Sassuolo ",
+    "Gres porcellanato effetto marmo",
+    "Sassuolo ceramica plus",
+    "Piastrelle stock sassuolo",
+    "Vendita piastrelle online",
     "Ceramiche Sassuolo",
-    "Ceramica Sassuolo plus ",
-    "Vendita gres porcellanato Sassuolo ",
-    "Piastrelle Sassuolo",
-    "Showroom piastrelle Sassuolo",
-    "Rivestimenti Sassuolo ",
-    "Effetto marmo Sassuolo",
-    "Effetto legno Sassuolo"
+
+    # "Sassuolo ceramica plus",
+    # "Vendita gres porcellanato Sassuolo ",
+    # "Piastrelle Sassuolo",
+    # "Showroom piastrelle Sassuolo",
+    # "Rivestimenti Sassuolo ",
+    # "Effetto marmo Sassuolo",
+    # "Effetto legno Sassuolo"
 ]
 
 
