@@ -81,7 +81,7 @@ keywords = [
     "Gres porcellanato Sassuolo ",
     "Gres porcellanato effetto marmo",
     "Sassuolo ceramica plus",
-    "Vendita piastrelle online",
+    #"Vendita piastrelle online",
     "Ceramiche Sassuolo",
     "Ceramica Sassuolo Plus"
     # "Sassuolo ceramica plus",
