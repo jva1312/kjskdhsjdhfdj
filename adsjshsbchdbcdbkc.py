@@ -81,7 +81,6 @@ keywords = [
     "Gres porcellanato Sassuolo ",
     "Gres porcellanato effetto marmo",
     "Sassuolo ceramica plus",
-    "Piastrelle stock sassuolo",
     "Vendita piastrelle online",
     "Ceramiche Sassuolo",
     "Ceramica Sassuolo Plus"
