@@ -28,6 +28,8 @@ PROXY_PORT = "16906"
 PROXY_USER = "w1559464768116"
 PROXY_PASS = os.getenv("PROXY_PASS")
 
+
+myads = [ 'https://ceramichesassuolo.com/it/','https://sassuoloceramicaplus.it/prodotto/base/','https://sassuoloceramicaplus.it/negozio/','https://sassuoloceramicaplus.it/sassuolo-ceramica-plus-outlet-vendita-piastrelle-in-gres-porcellanato-per-interni-e-per-esterni-sassuolo-preventivo-prezzi/','https://sassuoloceramicaplus.it/category/ceramiche-sassuolo/','https://sassuoloceramicaplus.it/sassuolo-ceramiche-plus-unazienda-deccellenza-nella-rivendita-di-ceramiche-innovative/','https://sassuoloceramicaplus.it/']
 def send_telegram_message(message):
     """Send a message to the specified Telegram chat."""
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
@@ -136,12 +138,15 @@ def search_and_click(proxy_host):
             ads = driver.find_elements(By.XPATH, "//span[contains(text(),'Sponsorizzato')]/ancestor::div[1]//a")
 
             if ads:
-                ad_link = ads[0].get_attribute("href")  # Get ad link
-                print(f"Clicking ad: {ad_link}")
-                ads[0].click()
-                time.sleep(random.uniform(5, 10))  # Wait for page to load
                 
-                message = f"✅ Ad Found!\n🔍 Keyword: {keyword}\n🌍 IP: {ip_address}\n🔗 Ad Link: {ad_link}"
+                ad_link = ads[0].get_attribute("href")
+                if ad in myads:
+                    # Get ad link
+                    print(f"Clicking ad: {ad_link}")
+                    ads[0].click()
+                    time.sleep(random.uniform(5, 10))  # Wait for page to load
+                
+                    message = f"✅ Ad Found!\n🔍 Keyword: {keyword}\n🌍 IP: {ip_address}\n🔗 Ad Link: {ad_link}"
             else:
                 print("No Google Ads found!")
                 message = f"❌ No Ad Found!\n🔍 Keyword: {keyword}\n🌍 IP: {ip_address}"
