@@ -5,7 +5,8 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 * * * *"   # Runs every 6 hours (adjust as needed)
+    # - cron: "0 * * * *"   # Runs every 1 hours (adjust as needed)
+    - cron: "do not run"   # Runs every 1 hours (adjust as needed)
   workflow_dispatch:  # Allows manual execution
 
 jobs:
