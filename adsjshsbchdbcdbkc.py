@@ -83,7 +83,7 @@ keywords = [
     "Gres porcellanato Sassuolo ",
     "Gres porcellanato effetto marmo",
     "Sassuolo ceramica plus",
-    #"Vendita piastrelle online",
+    "Vendita piastrelle online",
     "Ceramiche Sassuolo",
     "Ceramica Sassuolo Plus"
     # "Sassuolo ceramica plus",
@@ -144,14 +144,14 @@ def search_and_click(proxy_host):
             if ads:           
                 
                 ad_link = ads[0].get_attribute("href")
-                if ad1 in ad_link or ad2 in ad_link:                
+                #if ad1 in ad_link or ad2 in ad_link:                
                     # if any(ad in ad_adlink for ad in myads):
                     # Get ad link
-                    print(f"Clicking ad: {ad_link}")
-                    ads[0].click()
-                    time.sleep(random.uniform(5, 10))  # Wait for page to load
+                print(f"Clicking ad: {ad_link}")
+                ads[0].click()
+                time.sleep(random.uniform(5, 10))  # Wait for page to load
                 
-                    message = f"✅ Ad Found!\n🔍 Keyword: {keyword}\n🌍 IP: {ip_address}\n🔗 Ad Link: {ad_link}"
+                message = f"✅ Ad Found!\n🔍 Keyword: {keyword}\n🌍 IP: {ip_address}\n🔗 Ad Link: {ad_link}"
             else:
                 print("No Google Ads found!")
                 message = f"❌ No Ad Found!\n🔍 Keyword: {keyword}\n🌍 IP: {ip_address}"
