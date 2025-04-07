@@ -137,17 +137,21 @@ def search_and_click(proxy_host):
             # Step 3: Find Sponsored Ads
             ads = driver.find_elements(By.XPATH, "//span[contains(text(),'Sponsorizzato')]/ancestor::div[1]//a")
 
-            if ads:
+            ad1 = ceramicasassuolostock.it
+
+            ad2 = sassuoloceramicaplus.it
+    
+            if ads:           
                 
                 ad_link = ads[0].get_attribute("href")
+                if ad1 in ad_link or ad2 in ad_link:                
+                    # if any(ad in ad_adlink for ad in myads):
+                    # Get ad link
+                    print(f"Clicking ad: {ad_link}")
+                    ads[0].click()
+                    time.sleep(random.uniform(5, 10))  # Wait for page to load
                 
-                # if any(ad in ad_adlink for ad in myads):
-                # Get ad link
-                print(f"Clicking ad: {ad_link}")
-                ads[0].click()
-                time.sleep(random.uniform(5, 10))  # Wait for page to load
-            
-                message = f"✅ Ad Found!\n🔍 Keyword: {keyword}\n🌍 IP: {ip_address}\n🔗 Ad Link: {ad_link}"
+                    message = f"✅ Ad Found!\n🔍 Keyword: {keyword}\n🌍 IP: {ip_address}\n🔗 Ad Link: {ad_link}"
             else:
                 print("No Google Ads found!")
                 message = f"❌ No Ad Found!\n🔍 Keyword: {keyword}\n🌍 IP: {ip_address}"
