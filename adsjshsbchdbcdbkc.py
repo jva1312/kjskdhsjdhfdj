@@ -137,9 +137,9 @@ def search_and_click(proxy_host):
             # Step 3: Find Sponsored Ads
             ads = driver.find_elements(By.XPATH, "//span[contains(text(),'Sponsorizzato')]/ancestor::div[1]//a")
 
-            ad1 = ceramicasassuolostock.it
+            ad1 = 'ceramicasassuolostock'
 
-            ad2 = sassuoloceramicaplus.it
+            ad2 = 'sassuoloceramicaplus'
     
             if ads:           
                 
