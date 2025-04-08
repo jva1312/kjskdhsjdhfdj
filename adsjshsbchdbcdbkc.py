@@ -145,13 +145,16 @@ def search_and_click(proxy_host):
                 if ad_link:
                     for domain in myads:
                         if domain in ad_link:
-                            print(f"✅ Clicking ad: {ad_link}")
-                            ad.click()
-                            time.sleep(random.uniform(5, 10))  # Wait for page to load
-                            message = f"✅ Ad Found!\n🔍 Keyword: {keyword}\n🌍 IP: {ip_address}\n🔗 Ad Link: {ad_link}"
-                            send_telegram_message(message)
-                            clicked = True
-                            break
+                            if 'ceramichesassuoloshop' in ad_link:
+                                pass
+                            else:                                
+                                print(f"✅ Clicking ad: {ad_link}")
+                                ad.click()
+                                time.sleep(random.uniform(5, 10))  # Wait for page to load
+                                message = f"✅ Ad Found!\n🔍 Keyword: {keyword}\n🌍 IP: {ip_address}\n🔗 Ad Link: {ad_link}"
+                                send_telegram_message(message)
+                                clicked = True
+                                break
                     if clicked:
                         break  # Exit loop after first valid click
             
