@@ -48,6 +48,7 @@ def setup_driver(proxy_host):
     
     # Configure proxy settings
     seleniumwire_options = {
+        'verify_ssl': False,
         "proxy": {
             "http": f"http://{PROXY_USER}:{PROXY_PASS}@{proxy_host}:{PROXY_PORT}",
             "https": f"https://{PROXY_USER}:{PROXY_PASS}@{proxy_host}:{PROXY_PORT}",
