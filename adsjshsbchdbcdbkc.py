@@ -185,19 +185,19 @@ def search_and_click(proxy_host):
 
 #             send_telegram_message(message)
 
-#         except Exception as e:
-#             print("An error occurred:", e)
+        except Exception as e:
+            print("An error occurred:", e)
 
-#         finally:
-#             time.sleep(5)  # Reduce wait time
-#             driver.quit()
+        finally:
+            time.sleep(5)  # Reduce wait time
+            driver.quit()
 
-# if __name__ == "__main__":
-#         for host in PROXY_HOSTS:
+if __name__ == "__main__":
+        for host in PROXY_HOSTS:
            
-#             for i in range(10):
-#                 print(i)
-#                 search_and_click(host)
-#                 if i==10:
-#                     break
+            for i in range(10):
+                print(i)
+                search_and_click(host)
+                if i==10:
+                    break
                 
