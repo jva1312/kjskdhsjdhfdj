@@ -146,7 +146,7 @@ def search_and_click(proxy_host):
                     for domain in myads:
                         if domain in ad_link:
                             if 'ceramichesassuoloshop' in ad_link:
-                                pass
+                                break
                             else:                                
                                 print(f"✅ Clicking ad: {ad_link}")
                                 ad.click()
