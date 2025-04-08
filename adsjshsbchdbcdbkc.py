@@ -88,14 +88,13 @@ keywords = [
     # "Vendita piastrelle online",
     "Ceramiche Sassuolo",
     "Ceramica Sassuolo Plus"
-    
-    # "Sassuolo ceramica plus",
-    # "Vendita gres porcellanato Sassuolo ",
-    # "Piastrelle Sassuolo",
-    # "Showroom piastrelle Sassuolo",
-    # "Rivestimenti Sassuolo ",
-    # "Effetto marmo Sassuolo",
-    # "Effetto legno Sassuolo"
+    "Sassuolo ceramica plus",
+    "Vendita gres porcellanato Sassuolo ",
+    "Piastrelle Sassuolo",
+    "Showroom piastrelle Sassuolo",
+    "Rivestimenti Sassuolo ",
+    "Effetto marmo Sassuolo",
+    "Effetto legno Sassuolo"
 ]
 
 
