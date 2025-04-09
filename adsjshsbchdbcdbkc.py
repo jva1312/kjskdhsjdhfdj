@@ -29,7 +29,7 @@ PROXY_USER = "w15645653475615"
 PROXY_PASS = os.getenv("PROXY_PASS")
 
 
-myads = ['ceramichesassuolo','sassuoloceramicaplus','ceramicasassuolostock', 'ceramichedasassuolo',]
+myads = ['sassuoloceramicaplus','ceramicasassuolostock', 'ceramichedasassuolo',]
 def send_telegram_message(message):
     """Send a message to the specified Telegram chat."""
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
